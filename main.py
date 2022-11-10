@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 
-# Creates a header
+#  Header
 headers = {'User-agent': 'Mozilla/5.0'}
 
 # Requests the webpage
@@ -44,5 +44,5 @@ def bbc_news_scraper(keyword):
     for i, title in enumerate(keyword_list):
         print(i + 1, ':', title)
 
-
-bbc_news_scraper('Cup')
+# Search by this keyword if there exists
+bbc_news_scraper('doctors')
